@@ -21,9 +21,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference myRef = database.getReference();
-    API api=new API(myRef);
+
+    API api=new API();
     ListView listViewPokemon;
     ArrayList<String> pokemons;
     ArrayAdapter adapter=null;
